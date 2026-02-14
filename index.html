@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Harshada ❤️</title>
+    <style>
+        body {
+            margin: 0; background: #fff0f3;
+            font-family: 'Segoe UI', sans-serif; text-align: center; color: #c9184a;
+            overflow-x: hidden;
+        }
+        .header { padding: 50px 20px; }
+        h1 { font-size: 2.5rem; animation: fadeIn 2s; }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .photo-container {
+            display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px;
+        }
+
+        .floating-photo {
+            width: 150px; height: 150px; object-fit: cover;
+            border-radius: 50%; border: 5px solid white;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Different speeds for each photo to look natural */
+        .p1 { animation-delay: 0s; }
+        .p2 { animation-delay: 1s; }
+        .p3 { animation-delay: 2s; }
+
+        .message-box {
+            background: white; margin: 30px auto; padding: 30px;
+            width: 80%; max-width: 500px; border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Happy Valentine's Day, Harshada! ❤️</h1>
+        <p>A message from Samyak, across the miles...</p>
+    </div>
+
+    <div class="photo-container">
+        <img src="us1.jpg" class="floating-photo p1">
+        <img src="us2.jpg" class="floating-photo p2">
+        <img src="us3.jpg" class="floating-photo p3">
+    </div>
+
+    <div class="message-box">
+        <p>Harshada, you are the most special part of my world. Distance is temporary, but my love for you is forever.</p>
+        <p><strong>I can't wait to be with you again.</strong></p>
+        
+        <p>🎵 Our Song:</p>
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</body>
+</html>
